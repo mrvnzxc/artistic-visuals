@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed inset-x-0 top-0 z-30 border-b border-slate-200/80 bg-white/95 dark:border-white/10 dark:bg-slate-950/95"
+    class="fixed inset-x-0 top-0 z-30 border-b border-slate-200/80 bg-white/95 shadow-sm shadow-emerald-900/[0.03] dark:border-emerald-950/40 dark:bg-slate-950/95 dark:shadow-black/20"
   >
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
       <div class="flex items-center gap-3">
@@ -22,7 +22,7 @@
           <p class="text-sm font-semibold tracking-wide">
             Artistic Visuals
           </p>
-          <p class="text-xs text-slate-500 dark:text-slate-200">
+          <p class="text-xs text-emerald-800/80 dark:text-emerald-300/85">
             Photography
           </p>
         </div>
@@ -60,7 +60,7 @@
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="hover:text-slate-900 dark:hover:text-white"
+          class="transition-colors hover:text-emerald-800 dark:hover:text-emerald-200"
         >
           {{ item.label }}
         </NuxtLink>
@@ -83,27 +83,27 @@
 
         <NuxtLink
           to="/contact"
-          class="rounded-full border border-slate-700 bg-slate-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 shadow-sm transition hover:bg-slate-200 dark:border-white/20 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+          class="rounded-full border border-emerald-700/35 bg-gradient-to-r from-emerald-700 via-teal-700 to-emerald-800 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white shadow-md shadow-emerald-900/20 transition hover:brightness-110 dark:border-emerald-400/25 dark:from-emerald-600 dark:via-teal-600 dark:to-emerald-700"
         >
           Book a Session
         </NuxtLink>
       </div>
     </nav>
 
-    <div v-if="open" class="border-t border-slate-200 bg-white/95 dark:border-white/10 dark:bg-slate-950/95 lg:hidden">
+    <div v-if="open" class="border-t border-slate-200 bg-white/95 dark:border-emerald-950/40 dark:bg-slate-950/95 lg:hidden">
       <div class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 text-sm">
         <NuxtLink
           v-for="item in navItems"
           :key="item.to"
           :to="item.to"
-          class="rounded-md px-2 py-2 text-slate-900 hover:bg-slate-100/60 dark:text-slate-100 dark:hover:bg-white/5"
+          class="rounded-md px-2 py-2 text-slate-900 hover:bg-emerald-50/80 dark:text-slate-100 dark:hover:bg-emerald-950/40"
           @click="open = false"
         >
           {{ item.label }}
         </NuxtLink>
         <NuxtLink
           to="/contact"
-          class="mt-1 rounded-md border border-slate-700 bg-slate-100 px-2 py-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 hover:bg-slate-200 dark:border-white/20 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+          class="mt-1 rounded-md border border-emerald-700/35 bg-gradient-to-r from-emerald-700 via-teal-700 to-emerald-800 px-2 py-2 text-center text-xs font-semibold uppercase tracking-[0.2em] text-white hover:brightness-110 dark:border-emerald-400/25 dark:from-emerald-600 dark:via-teal-600 dark:to-emerald-700"
           @click="open = false"
         >
           Book a Session

@@ -20,7 +20,11 @@ export default {
           100: '#e2e8f0',
           500: '#0f172a',
           600: '#020617',
-          accent: '#eab308'
+          accent: '#eab308',
+          mint: '#d9f5e6',
+          'mint-soft': '#ecfdf5',
+          forest: '#134e4a',
+          'forest-deep': '#042f2e'
         }
       }
     }

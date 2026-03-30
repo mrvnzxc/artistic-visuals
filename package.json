@@ -2,6 +2,9 @@
   "name": "artistic-visuals-photography",
   "version": "1.0.0",
   "private": true,
+  "imports": {
+    "#internal/nuxt/paths": "./node_modules/@nuxt/nitro-server/dist/runtime/utils/paths.mjs"
+  },
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",

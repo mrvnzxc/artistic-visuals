@@ -3,28 +3,28 @@
     <!-- Hero -->
     <section data-reveal class="mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-16 pt-10 md:flex-row md:items-center lg:px-6 lg:pb-24 lg:pt-12">
       <div class="flex-1 space-y-6">
-        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-200">
+        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-900/80 dark:text-emerald-300/90">
           Photography • Portraits • Events
         </p>
         <h1 class="text-balance text-4xl font-semibold tracking-tight text-slate-900 dark:text-slate-50 sm:text-5xl lg:text-6xl">
           Timeless portraits,
-          <span class="block text-slate-700 dark:text-slate-300">honest stories.</span>
+          <span class="block bg-gradient-to-r from-emerald-800 via-teal-700 to-emerald-900 bg-clip-text text-transparent dark:from-emerald-200 dark:via-teal-200 dark:to-emerald-100">honest stories.</span>
         </h1>
         <p class="max-w-xl text-sm text-slate-600 dark:text-slate-300 sm:text-base">
           Hi, I&apos;m
-          <span class="font-medium text-slate-900 dark:text-slate-100">Joshua Martinez Austria</span> — a photographer in
+          <span class="font-medium text-emerald-900 dark:text-emerald-100">Joshua Martinez Austria</span> — a photographer in
           the Philippines focused on real moments, genuine emotions, and story-driven images.
         </p>
         <div class="flex flex-wrap items-center gap-4">
           <NuxtLink
             to="/contact"
-            class="rounded-full border border-slate-300 bg-slate-100 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-slate-900 shadow-sm transition hover:bg-slate-200 dark:border-white/20 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+            class="rounded-full border border-emerald-700/30 bg-gradient-to-r from-emerald-700 via-teal-700 to-emerald-800 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-emerald-900/20 transition hover:brightness-110 dark:border-emerald-400/25 dark:from-emerald-600 dark:via-teal-600 dark:to-emerald-700 dark:shadow-emerald-950/35"
           >
             Book a session
           </NuxtLink>
           <NuxtLink
             to="/gallery"
-            class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white"
+            class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/90 hover:text-emerald-950 dark:text-emerald-200/90 dark:hover:text-emerald-50"
           >
             <span>View gallery</span>
             <Icon icon="solar:arrow-right-outline" class="text-base" />
@@ -32,19 +32,19 @@
         </div>
         <dl class="mt-4 grid grid-cols-3 gap-4 text-xs text-slate-600 dark:text-slate-300 sm:max-w-md">
           <div>
-            <dt class="font-semibold text-slate-900 dark:text-slate-100">
+            <dt class="font-semibold text-emerald-900 dark:text-emerald-100">
               Weddings & Events
             </dt>
             <dd>Prenups, weddings, birthdays, reunions, and special life moments.</dd>
           </div>
           <div>
-            <dt class="font-semibold text-slate-900 dark:text-slate-100">
+            <dt class="font-semibold text-emerald-900 dark:text-emerald-100">
               Portrait Sessions
             </dt>
             <dd>Families, couples, and personal branding.</dd>
           </div>
           <div>
-            <dt class="font-semibold text-slate-900 dark:text-slate-100">
+            <dt class="font-semibold text-emerald-900 dark:text-emerald-100">
               On‑location
             </dt>
             <dd>General Santos City, Philippines.</dd>
@@ -62,7 +62,7 @@
               role="button"
               tabindex="0"
               :aria-label="`Open ${itemLabels.portrait}`"
-              class="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-slate-300 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md hover:border-slate-500 dark:border-white/20 dark:bg-slate-900/40 dark:hover:border-white/35 cursor-zoom-in"
+              class="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-slate-300/90 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/45 dark:bg-slate-900/40 dark:hover:border-emerald-500/40 dark:hover:shadow-emerald-950/30 cursor-zoom-in"
               @click="openImage('/images/index/portrait.jpg')"
               @keydown.enter.prevent="openImage('/images/index/portrait.jpg')"
               @keydown.space.prevent="openImage('/images/index/portrait.jpg')"
@@ -85,7 +85,7 @@
               role="button"
               tabindex="0"
               :aria-label="`Open ${itemLabels.details}`"
-              class="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-300 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md hover:border-slate-500 dark:border-white/20 dark:bg-slate-900/40 dark:hover:border-white/35 cursor-zoom-in"
+              class="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-300/90 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/45 dark:bg-slate-900/40 dark:hover:border-emerald-500/40 dark:hover:shadow-emerald-950/30 cursor-zoom-in"
               @click="openImage('/images/index/details.jpg')"
               @keydown.enter.prevent="openImage('/images/index/details.jpg')"
               @keydown.space.prevent="openImage('/images/index/details.jpg')"
@@ -110,7 +110,7 @@
               role="button"
               tabindex="0"
               :aria-label="`Open ${itemLabels.weddings}`"
-              class="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-300 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md hover:border-slate-500 dark:border-white/20 dark:bg-slate-900/40 dark:hover:border-white/35 cursor-zoom-in"
+              class="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-300/90 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/45 dark:bg-slate-900/40 dark:hover:border-emerald-500/40 dark:hover:shadow-emerald-950/30 cursor-zoom-in"
               @click="openImage('/images/index/wedding.jpg')"
               @keydown.enter.prevent="openImage('/images/index/wedding.jpg')"
               @keydown.space.prevent="openImage('/images/index/wedding.jpg')"
@@ -133,7 +133,7 @@
               role="button"
               tabindex="0"
               :aria-label="`Open ${itemLabels.editorial}`"
-              class="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-slate-300 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md hover:border-slate-500 dark:border-white/20 dark:bg-slate-900/40 dark:hover:border-white/35 cursor-zoom-in"
+              class="group relative aspect-[3/4] overflow-hidden rounded-2xl border border-slate-300/90 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-emerald-400/60 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/45 dark:bg-slate-900/40 dark:hover:border-emerald-500/40 dark:hover:shadow-emerald-950/30 cursor-zoom-in"
               @click="openImage('/images/index/editorial.jpg')"
               @keydown.enter.prevent="openImage('/images/index/editorial.jpg')"
               @keydown.space.prevent="openImage('/images/index/editorial.jpg')"
@@ -168,7 +168,7 @@
         </div>
         <NuxtLink
           to="/services"
-          class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 hover:text-slate-900 dark:text-slate-200 dark:hover:text-white"
+          class="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/90 hover:text-emerald-950 dark:text-emerald-200/90 dark:hover:text-emerald-50"
         >
           View all services
         </NuxtLink>
@@ -178,18 +178,18 @@
           <article
           v-for="service in services"
           :key="service.title"
-          class="flex flex-col justify-between rounded-2xl border border-slate-300 bg-white p-5 text-sm text-slate-700 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-md hover:border-slate-500 dark:border-white/20 dark:bg-white/5 dark:text-slate-200 dark:hover:border-white/35 dark:hover:bg-white/10"
+          class="flex flex-col justify-between rounded-2xl border border-slate-300/90 bg-white/95 p-5 text-sm text-slate-700 shadow-sm shadow-emerald-900/5 ring-1 ring-emerald-900/[0.04] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-emerald-300/70 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/50 dark:bg-slate-900/35 dark:text-slate-200 dark:ring-emerald-500/10 dark:hover:border-emerald-500/35 dark:hover:bg-slate-900/50"
           data-reveal
         >
           <div>
-            <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-50">
+            <h3 class="text-sm font-semibold text-emerald-950 dark:text-emerald-50">
               {{ service.title }}
             </h3>
             <p class="mt-2 text-xs text-slate-600 dark:text-slate-300">
               {{ service.description }}
             </p>
           </div>
-          <p class="mt-4 text-xs font-semibold text-slate-700 dark:text-white">
+          <p class="mt-4 text-xs font-semibold text-emerald-800 dark:text-emerald-200">
             {{ service.note }}
           </p>
         </article>
@@ -203,7 +203,7 @@
       @click.self="closeImage"
     >
       <div
-        class="relative max-w-5xl w-full rounded-2xl border border-white/15 bg-black/40 p-2 shadow-2xl"
+        class="relative max-w-5xl w-full rounded-2xl border border-emerald-400/20 bg-black/40 p-2 shadow-2xl shadow-emerald-950/40"
       >
         <button
           class="absolute right-2 top-2 rounded-full bg-black/60 px-3 py-2 text-sm text-white hover:bg-black/80"

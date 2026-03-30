@@ -1,20 +1,20 @@
 <template>
   <div
-    class="relative isolate min-h-screen overflow-x-hidden bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-50"
+    class="relative isolate min-h-screen overflow-x-hidden bg-gradient-to-b from-brand-mint-soft/40 via-white to-white text-slate-900 dark:from-brand-forest-deep dark:via-slate-950 dark:to-slate-950 dark:text-slate-50"
   >
     <!-- Decorative top wave -->
     <div
-      class="pointer-events-none absolute inset-x-0 top-0 z-0 block h-28 bg-[#d9f5e6] [clip-path:polygon(0_0,100%_0,100%_70%,80%_88%,58%_98%,34%_92%,14%_82%,0_68%)] sm:h-44 sm:[clip-path:polygon(0_0,100%_0,100%_72%,82%_86%,60%_96%,34%_92%,14%_84%,0_70%)] dark:hidden"
+      class="pointer-events-none absolute inset-x-0 top-0 z-0 block h-28 bg-brand-mint [clip-path:polygon(0_0,100%_0,100%_70%,80%_88%,58%_98%,34%_92%,14%_82%,0_68%)] sm:h-44 sm:[clip-path:polygon(0_0,100%_0,100%_72%,82%_86%,60%_96%,34%_92%,14%_84%,0_70%)] dark:hidden"
     />
     <div
-      class="pointer-events-none absolute inset-x-0 top-0 z-0 hidden h-28 bg-slate-900/40 [clip-path:polygon(0_0,100%_0,100%_70%,80%_88%,58%_98%,34%_92%,14%_82%,0_68%)] sm:h-44 sm:[clip-path:polygon(0_0,100%_0,100%_72%,82%_86%,60%_96%,34%_92%,14%_84%,0_70%)] dark:block"
+      class="pointer-events-none absolute inset-x-0 top-0 z-0 hidden h-28 bg-gradient-to-br from-brand-forest/90 via-slate-900/50 to-slate-950/30 [clip-path:polygon(0_0,100%_0,100%_70%,80%_88%,58%_98%,34%_92%,14%_82%,0_68%)] sm:h-44 sm:[clip-path:polygon(0_0,100%_0,100%_72%,82%_86%,60%_96%,34%_92%,14%_84%,0_70%)] dark:block"
     />
     <!-- Decorative bottom wave -->
     <div
-      class="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-32 bg-[#d9f5e6] [clip-path:polygon(0_38%,16%_18%,38%_10%,60%_18%,82%_30%,100%_42%,100%_100%,0_100%)] sm:h-36 sm:[clip-path:polygon(0_44%,16%_24%,38%_14%,60%_20%,82%_34%,100%_46%,100%_100%,0_100%)] dark:hidden"
+      class="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-32 bg-brand-mint [clip-path:polygon(0_38%,16%_18%,38%_10%,60%_18%,82%_30%,100%_42%,100%_100%,0_100%)] sm:h-36 sm:[clip-path:polygon(0_44%,16%_24%,38%_14%,60%_20%,82%_34%,100%_46%,100%_100%,0_100%)] dark:hidden"
     />
     <div
-      class="pointer-events-none absolute inset-x-0 bottom-0 z-0 hidden h-32 bg-slate-900/35 [clip-path:polygon(0_38%,16%_18%,38%_10%,60%_18%,82%_30%,100%_42%,100%_100%,0_100%)] sm:h-36 sm:[clip-path:polygon(0_44%,16%_24%,38%_14%,60%_20%,82%_34%,100%_46%,100%_100%,0_100%)] dark:block"
+      class="pointer-events-none absolute inset-x-0 bottom-0 z-0 hidden h-32 bg-gradient-to-tr from-slate-950/40 via-brand-forest/35 to-slate-900/30 [clip-path:polygon(0_38%,16%_18%,38%_10%,60%_18%,82%_30%,100%_42%,100%_100%,0_100%)] sm:h-36 sm:[clip-path:polygon(0_44%,16%_24%,38%_14%,60%_20%,82%_34%,100%_46%,100%_100%,0_100%)] dark:block"
     />
     <SiteNav />
     <main class="relative z-10 pt-20">

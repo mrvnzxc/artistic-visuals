@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-3xl px-4 pb-20 pt-10 text-slate-900 dark:text-slate-50 lg:px-6 lg:pt-12">
     <header data-reveal class="max-w-2xl">
-      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-200">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-900/80 dark:text-emerald-300/90">
         Contact
       </p>
       <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -14,102 +14,116 @@
       </p>
     </header>
 
-    <section data-reveal class="mt-8 rounded-2xl border border-slate-300 bg-white p-5 text-slate-800 transition-all duration-300 ease-out hover:shadow-md hover:border-slate-500 dark:border-white/20 dark:bg-white/5 dark:text-slate-100 dark:hover:border-white/35 sm:p-6">
+    <section data-reveal class="mt-8 rounded-2xl border border-slate-300/90 bg-white/90 p-5 text-slate-800 shadow-sm shadow-emerald-900/5 ring-1 ring-emerald-900/[0.04] transition-all duration-300 ease-out hover:border-emerald-300/70 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/50 dark:bg-slate-900/40 dark:text-slate-100 dark:ring-emerald-500/10 dark:hover:border-emerald-500/35 sm:p-6">
       <form class="space-y-5">
         <div class="grid gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
               Name
             </label>
             <input
               type="text"
               placeholder="Full name"
-              class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
             >
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
               Email
             </label>
             <input
               type="email"
               placeholder="you@example.com"
-              class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
             >
           </div>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
               Phone (optional)
             </label>
             <input
               type="tel"
               placeholder="+63 ..."
-              class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
             >
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
               Instagram / Facebook (optional)
             </label>
             <input
               type="text"
               placeholder="@yourhandle or profile link"
-              class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
             >
           </div>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
               What are you looking for?
             </label>
-            <select
-              class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
-            >
-              <option>Choose a session type</option>
-              <option>Wedding / Event</option>
-              <option>Couple / Engagement</option>
-              <option>Family / Lifestyle</option>
-              <option>Portrait / Personal Branding</option>
-              <option>Brand / Content Session</option>
-              <option>Other</option>
-            </select>
+            <div class="group relative mt-2">
+              <select
+                aria-label="Session type"
+                class="session-select w-full cursor-pointer appearance-none rounded-xl border border-slate-300/90 bg-gradient-to-b from-white to-slate-50/90 py-2.5 pl-3 pr-11 text-sm text-slate-900 shadow-sm transition-all duration-200 [color-scheme:light] hover:border-emerald-400/70 hover:shadow-md hover:shadow-emerald-900/5 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 dark:border-emerald-900/55 dark:from-slate-950/90 dark:to-slate-900/95 dark:text-slate-100 dark:shadow-black/20 dark:[color-scheme:dark] dark:hover:border-emerald-500/45 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/25"
+              >
+                <option value="">
+                  Choose a session type
+                </option>
+                <option>Wedding / Event</option>
+                <option>Couple / Engagement</option>
+                <option>Family / Lifestyle</option>
+                <option>Portrait / Personal Branding</option>
+                <option>Brand / Content Session</option>
+                <option>Other</option>
+              </select>
+              <span
+                class="pointer-events-none absolute inset-y-0 right-0 flex w-11 items-center justify-center rounded-r-xl border-l border-slate-200/80 bg-gradient-to-b from-emerald-50/90 to-teal-50/80 text-emerald-800 transition-all duration-200 group-hover:from-emerald-100/90 group-hover:to-teal-100/80 group-focus-within:border-emerald-300/60 group-focus-within:from-emerald-100 group-focus-within:to-teal-100 dark:border-emerald-800/50 dark:from-emerald-950/80 dark:to-teal-950/70 dark:text-emerald-300 dark:group-hover:from-emerald-900/90 dark:group-hover:to-teal-900/80 dark:group-focus-within:border-emerald-500/40 dark:group-focus-within:from-emerald-900 dark:group-focus-within:to-teal-900"
+                aria-hidden="true"
+              >
+                <Icon
+                  icon="solar:alt-arrow-down-linear"
+                  class="text-lg transition-transform duration-200 ease-out group-hover:translate-y-px group-focus-within:rotate-180"
+                />
+              </span>
+            </div>
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
               Ideal date & location
             </label>
             <input
               type="text"
               placeholder="Example: June 15, Manila"
-              class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
             >
           </div>
         </div>
 
         <div>
-          <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-600 dark:text-slate-300">
+          <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
             Tell me about your vision
           </label>
           <textarea
             rows="4"
             placeholder="Share what you&apos;re dreaming up, who will be there, and anything that matters to you."
-            class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-slate-900 focus:outline-none focus:ring-1 focus:ring-slate-900/20 dark:border-white/15 dark:bg-slate-900/60 dark:text-slate-100 dark:focus:border-white dark:focus:ring-white/30"
+            class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
           />
         </div>
 
         <button
           type="button"
-          class="w-full rounded-full border border-slate-300 bg-slate-100 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-slate-900 shadow-sm transition hover:bg-slate-200 dark:border-white/20 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
+          class="w-full rounded-full border border-emerald-700/25 bg-gradient-to-r from-emerald-700 via-teal-700 to-emerald-800 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-emerald-900/25 transition hover:brightness-110 hover:shadow-lg dark:border-emerald-400/20 dark:from-emerald-600 dark:via-teal-600 dark:to-emerald-700 dark:shadow-emerald-950/40"
         >
           This button is a mockup (wire it later)
         </button>
 
-        <p class="text-xs text-slate-500 dark:text-slate-400">
+        <p class="text-xs text-slate-600 dark:text-emerald-200/55">
           Tip: later, connect this form to email (via a simple API route, Formspree, Getform, or your
           own backend) so inquiries arrive directly in your inbox.
         </p>
@@ -117,4 +131,21 @@
     </section>
   </div>
 </template>
+
+<script setup lang="ts">
+import { Icon } from '@iconify/vue'
+</script>
+
+<style>
+/* Native option list: pair with color-scheme on .session-select for dark mode alignment */
+.session-select option {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.dark .session-select option {
+  background-color: #042f2e;
+  color: #ecfdf5;
+}
+</style>
 
