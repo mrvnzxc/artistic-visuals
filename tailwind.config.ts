@@ -16,15 +16,12 @@ export default {
       },
       colors: {
         brand: {
-          50: '#f8fafc',
-          100: '#e2e8f0',
+          50: '#fafafa',
+          100: '#f4f4f5',
           500: '#0f172a',
           600: '#020617',
-          accent: '#eab308',
-          mint: '#d9f5e6',
-          'mint-soft': '#ecfdf5',
-          forest: '#134e4a',
-          'forest-deep': '#042f2e'
+          silver: '#c4c4cc',
+          'silver-muted': '#a1a1aa'
         }
       }
     }

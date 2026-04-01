@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-6xl px-4 pb-20 pt-10 text-slate-900 dark:text-slate-50 lg:px-6 lg:pt-12">
     <header data-reveal class="max-w-2xl">
-      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-900/80 dark:text-emerald-300/90">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-zinc-400">
         Gallery
       </p>
       <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -18,7 +18,7 @@
           v-for="(item, index) in galleryItems"
           :key="index"
           data-reveal
-          class="group relative aspect-[3/4] overflow-hidden rounded-xl border border-slate-300/90 bg-gradient-to-br from-slate-200 via-emerald-100/30 to-slate-400 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-emerald-400/55 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/45 dark:from-slate-800 dark:via-emerald-950/40 dark:to-slate-950 dark:hover:border-emerald-500/40"
+          class="group relative aspect-[3/4] overflow-hidden rounded-xl border border-slate-300/90 bg-gradient-to-br from-zinc-200 via-zinc-100/80 to-slate-400 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-zinc-400/70 hover:shadow-md hover:shadow-black/10 dark:border-zinc-700/50 dark:from-zinc-900 dark:via-zinc-800/80 dark:to-neutral-950 dark:hover:border-zinc-500/50"
         >
           <img
             v-if="item.src"
@@ -30,7 +30,7 @@
 
           <div
             v-else
-            class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(16,185,129,0.22),_transparent_55%)] opacity-75 group-hover:opacity-100 dark:bg-[radial-gradient(circle_at_top,_rgba(52,211,153,0.18),_transparent_55%)]"
+            class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(161,161,170,0.35),_transparent_55%)] opacity-75 group-hover:opacity-100 dark:bg-[radial-gradient(circle_at_top,_rgba(113,113,122,0.25),_transparent_55%)]"
           />
 
           <div

@@ -1,35 +1,34 @@
 export default defineNuxtPlugin((nuxtApp) => {
-  const initReveal = () => {
-    const elements = Array.from(
-      document.querySelectorAll<HTMLElement>('[data-reveal]:not([data-reveal-init])')
-    )
+  let observer: IntersectionObserver | null = null
 
-    if (!elements.length) return
+  const setup = () => {
+    observer?.disconnect()
 
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
+    observer = new IntersectionObserver(
+      (entries) => {
         for (const entry of entries) {
-          if (!entry.isIntersecting) continue
           const el = entry.target as HTMLElement
-          const delay = el.dataset.revealDelay ?? '0'
-          el.style.transitionDelay = `${delay}ms`
-          el.classList.add('is-revealed')
-          obs.unobserve(el)
+          if (entry.isIntersecting) {
+            const delay = el.dataset.revealDelay ?? '0'
+            el.style.transitionDelay = `${delay}ms`
+            el.classList.add('is-revealed')
+          } else {
+            el.style.transitionDelay = '0ms'
+            el.classList.remove('is-revealed')
+          }
         }
       },
-      { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -5% 0px' }
     )
 
-    for (const el of elements) {
-      el.setAttribute('data-reveal-init', 'true')
-      observer.observe(el)
-    }
+    document.querySelectorAll<HTMLElement>('[data-reveal]').forEach((el) => {
+      observer!.observe(el)
+    })
   }
 
   nuxtApp.hook('page:finish', () => {
-    requestAnimationFrame(initReveal)
+    requestAnimationFrame(setup)
   })
 
-  requestAnimationFrame(initReveal)
+  requestAnimationFrame(setup)
 })
-

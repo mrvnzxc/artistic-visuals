@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto max-w-5xl px-4 pb-20 pt-10 text-slate-900 dark:text-slate-50 lg:px-6 lg:pt-12">
     <header data-reveal class="max-w-2xl">
-      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-900/80 dark:text-emerald-300/90">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-zinc-400">
         Services
       </p>
       <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
@@ -18,19 +18,19 @@
         v-for="service in services"
         :key="service.title"
         data-reveal
-        class="rounded-2xl border border-slate-300/90 bg-white/95 p-5 text-slate-800 shadow-sm shadow-emerald-900/5 ring-1 ring-emerald-900/[0.04] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-emerald-300/70 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/50 dark:bg-slate-900/35 dark:text-slate-200 dark:ring-emerald-500/10 dark:hover:border-emerald-500/35 dark:hover:bg-slate-900/50 sm:p-6"
+        class="rounded-2xl border border-slate-300/90 bg-white/95 p-5 text-slate-800 shadow-sm shadow-black/5 ring-1 ring-zinc-900/[0.06] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-zinc-400/80 hover:shadow-md hover:shadow-black/10 dark:border-zinc-700/50 dark:bg-zinc-950/40 dark:text-zinc-200 dark:ring-zinc-500/10 dark:hover:border-zinc-500/40 dark:hover:bg-zinc-900/50 sm:p-6"
       >
         <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 class="text-lg font-semibold">
               {{ service.title }}
             </h2>
-            <p class="mt-1 text-xs uppercase tracking-[0.25em] text-emerald-800/70 dark:text-emerald-300/70">
+            <p class="mt-1 text-xs uppercase tracking-[0.25em] text-slate-500 dark:text-zinc-500">
               {{ service.tagline }}
             </p>
           </div>
           <div class="text-right text-sm">
-            <p class="text-emerald-950 dark:text-emerald-50">
+            <p class="text-slate-900 dark:text-zinc-50">
               {{ service.priceHint }}
             </p>
             <p class="text-xs text-slate-500 dark:text-slate-400">
@@ -48,7 +48,7 @@
           class="mt-4 grid gap-2 text-xs text-slate-700 dark:text-slate-200 sm:grid-cols-2"
         >
           <li v-for="item in service.included" :key="item" class="flex items-start gap-2">
-            <span class="mt-[3px] h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500 dark:bg-emerald-400" />
+            <span class="mt-[3px] h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-500" />
             <span>{{ item }}</span>
           </li>
         </ul>
@@ -59,7 +59,7 @@
           </p>
           <NuxtLink
             to="/contact"
-            class="rounded-full border border-emerald-700/35 px-4 py-2 font-semibold uppercase tracking-[0.25em] text-emerald-900 hover:border-emerald-600 hover:bg-emerald-50/90 dark:border-emerald-500/35 dark:text-emerald-100 dark:hover:border-emerald-400/50 dark:hover:bg-emerald-950/50"
+            class="rounded-full border border-zinc-400/80 px-4 py-2 font-semibold uppercase tracking-[0.25em] text-slate-800 hover:border-zinc-500 hover:bg-zinc-100/90 dark:border-zinc-600/50 dark:text-zinc-200 dark:hover:border-zinc-500 dark:hover:bg-zinc-900/60"
           >
             Ask about this package
           </NuxtLink>

@@ -1,76 +1,76 @@
 <template>
-  <div class="mx-auto max-w-3xl px-4 pb-20 pt-10 text-slate-900 dark:text-slate-50 lg:px-6 lg:pt-12">
+  <div class="mx-auto max-w-3xl px-4 pb-20 pt-10 text-slate-900 dark:text-zinc-50 lg:px-6 lg:pt-12">
     <header data-reveal class="max-w-2xl">
-      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-900/80 dark:text-emerald-300/90">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 dark:text-zinc-400">
         Contact
       </p>
       <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
         Let&apos;s plan your next session.
       </h1>
-      <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
+      <p class="mt-3 text-sm text-slate-600 dark:text-zinc-400">
         This form is just a front‑end mockup. Connect it to your preferred email service or form
         backend later. For now, it shows all the fields you might want to collect from potential
         clients.
       </p>
     </header>
 
-    <section data-reveal class="mt-8 rounded-2xl border border-slate-300/90 bg-white/90 p-5 text-slate-800 shadow-sm shadow-emerald-900/5 ring-1 ring-emerald-900/[0.04] transition-all duration-300 ease-out hover:border-emerald-300/70 hover:shadow-md hover:shadow-emerald-900/10 dark:border-emerald-950/50 dark:bg-slate-900/40 dark:text-slate-100 dark:ring-emerald-500/10 dark:hover:border-emerald-500/35 sm:p-6">
+    <section data-reveal class="mt-8 rounded-2xl border border-slate-300/90 bg-white/90 p-5 text-slate-800 shadow-sm shadow-black/5 ring-1 ring-zinc-900/[0.06] transition-all duration-300 ease-out hover:border-zinc-400/80 hover:shadow-md hover:shadow-black/10 dark:border-zinc-700/50 dark:bg-zinc-950/40 dark:text-zinc-100 dark:ring-zinc-500/10 dark:hover:border-zinc-500/40 sm:p-6">
       <form class="space-y-5">
         <div class="grid gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
               Name
             </label>
             <input
               type="text"
               placeholder="Full name"
-              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/30 dark:border-white/12 dark:bg-black/40 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
             >
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
               Email
             </label>
             <input
               type="email"
               placeholder="you@example.com"
-              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/30 dark:border-white/12 dark:bg-black/40 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
             >
           </div>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
               Phone (optional)
             </label>
             <input
               type="tel"
               placeholder="+63 ..."
-              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/30 dark:border-white/12 dark:bg-black/40 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
             >
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
               Instagram / Facebook (optional)
             </label>
             <input
               type="text"
               placeholder="@yourhandle or profile link"
-              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/30 dark:border-white/12 dark:bg-black/40 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
             >
           </div>
         </div>
 
         <div class="grid gap-4 sm:grid-cols-2">
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
               What are you looking for?
             </label>
             <div class="group relative mt-2">
               <select
                 aria-label="Session type"
-                class="session-select w-full cursor-pointer appearance-none rounded-xl border border-slate-300/90 bg-gradient-to-b from-white to-slate-50/90 py-2.5 pl-3 pr-11 text-sm text-slate-900 shadow-sm transition-all duration-200 [color-scheme:light] hover:border-emerald-400/70 hover:shadow-md hover:shadow-emerald-900/5 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/30 dark:border-emerald-900/55 dark:from-slate-950/90 dark:to-slate-900/95 dark:text-slate-100 dark:shadow-black/20 dark:[color-scheme:dark] dark:hover:border-emerald-500/45 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/25"
+                class="session-select w-full cursor-pointer appearance-none rounded-xl border border-slate-300/90 bg-gradient-to-b from-white to-zinc-50/90 py-2.5 pl-3 pr-11 text-sm text-slate-900 shadow-sm transition-all duration-200 [color-scheme:light] hover:border-zinc-400/80 hover:shadow-md hover:shadow-black/5 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/35 dark:border-zinc-700/60 dark:from-zinc-950/90 dark:to-black/90 dark:text-zinc-100 dark:shadow-black/20 dark:[color-scheme:dark] dark:hover:border-zinc-500/50 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
               >
                 <option value="">
                   Choose a session type
@@ -83,7 +83,7 @@
                 <option>Other</option>
               </select>
               <span
-                class="pointer-events-none absolute inset-y-0 right-0 flex w-11 items-center justify-center rounded-r-xl border-l border-slate-200/80 bg-gradient-to-b from-emerald-50/90 to-teal-50/80 text-emerald-800 transition-all duration-200 group-hover:from-emerald-100/90 group-hover:to-teal-100/80 group-focus-within:border-emerald-300/60 group-focus-within:from-emerald-100 group-focus-within:to-teal-100 dark:border-emerald-800/50 dark:from-emerald-950/80 dark:to-teal-950/70 dark:text-emerald-300 dark:group-hover:from-emerald-900/90 dark:group-hover:to-teal-900/80 dark:group-focus-within:border-emerald-500/40 dark:group-focus-within:from-emerald-900 dark:group-focus-within:to-teal-900"
+                class="pointer-events-none absolute inset-y-0 right-0 flex w-11 items-center justify-center rounded-r-xl border-l border-zinc-200/90 bg-gradient-to-b from-zinc-100 to-zinc-200/90 text-zinc-700 transition-all duration-200 group-hover:from-zinc-200 group-hover:to-zinc-300/90 group-focus-within:border-zinc-400/70 group-focus-within:from-zinc-200 group-focus-within:to-zinc-300 dark:border-zinc-700/80 dark:from-zinc-800/90 dark:to-zinc-900 dark:text-zinc-300 dark:group-hover:from-zinc-700 dark:group-hover:to-zinc-800 dark:group-focus-within:border-zinc-500/50 dark:group-focus-within:from-zinc-700 dark:group-focus-within:to-zinc-800"
                 aria-hidden="true"
               >
                 <Icon
@@ -94,36 +94,36 @@
             </div>
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+            <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
               Ideal date & location
             </label>
             <input
               type="text"
               placeholder="Example: June 15, Manila"
-              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
+              class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/30 dark:border-white/12 dark:bg-black/40 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
             >
           </div>
         </div>
 
         <div>
-          <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-emerald-900/85 dark:text-emerald-200/85">
+          <label class="block text-xs font-semibold uppercase tracking-[0.25em] text-slate-700 dark:text-zinc-300">
             Tell me about your vision
           </label>
           <textarea
             rows="4"
             placeholder="Share what you&apos;re dreaming up, who will be there, and anything that matters to you."
-            class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/25 dark:border-white/12 dark:bg-slate-950/50 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400/20"
+            class="mt-2 w-full rounded-xl border border-slate-300/90 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 transition-colors duration-200 focus:border-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-400/30 dark:border-white/12 dark:bg-black/40 dark:text-zinc-100 dark:placeholder:text-zinc-500 dark:focus:border-zinc-400 dark:focus:ring-zinc-500/25"
           />
         </div>
 
         <button
           type="button"
-          class="w-full rounded-full border border-emerald-700/25 bg-gradient-to-r from-emerald-700 via-teal-700 to-emerald-800 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-emerald-900/25 transition hover:brightness-110 hover:shadow-lg dark:border-emerald-400/20 dark:from-emerald-600 dark:via-teal-600 dark:to-emerald-700 dark:shadow-emerald-950/40"
+          class="w-full rounded-full border border-zinc-800/40 bg-gradient-to-r from-zinc-800 via-neutral-800 to-black px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/25 transition hover:brightness-110 hover:shadow-lg dark:border-zinc-600/50 dark:from-zinc-700 dark:via-zinc-800 dark:to-black dark:shadow-black/40"
         >
           This button is a mockup (wire it later)
         </button>
 
-        <p class="text-xs text-slate-600 dark:text-emerald-200/55">
+        <p class="text-xs text-slate-600 dark:text-zinc-500">
           Tip: later, connect this form to email (via a simple API route, Formspree, Getform, or your
           own backend) so inquiries arrive directly in your inbox.
         </p>
@@ -137,15 +137,13 @@ import { Icon } from '@iconify/vue'
 </script>
 
 <style>
-/* Native option list: pair with color-scheme on .session-select for dark mode alignment */
 .session-select option {
   background-color: #ffffff;
   color: #0f172a;
 }
 
 .dark .session-select option {
-  background-color: #042f2e;
-  color: #ecfdf5;
+  background-color: #18181b;
+  color: #fafafa;
 }
 </style>
-
