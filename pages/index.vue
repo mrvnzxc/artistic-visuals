@@ -8,7 +8,9 @@
         </p>
         <h1 class="text-balance text-4xl font-semibold tracking-tight text-slate-900 dark:text-zinc-50 sm:text-5xl lg:text-6xl">
           Timeless portraits,
-          <span class="block bg-gradient-to-r from-zinc-600 via-slate-500 to-zinc-800 bg-clip-text text-transparent dark:from-zinc-300 dark:via-zinc-200 dark:to-zinc-400">honest stories.</span>
+          <span
+            class="block bg-gradient-to-r from-zinc-500 via-slate-400 to-zinc-600 bg-clip-text text-transparent dark:from-zinc-200 dark:via-zinc-300 dark:to-zinc-200"
+          >honest stories.</span>
         </h1>
         <p class="max-w-xl text-sm text-slate-600 dark:text-zinc-400 sm:text-base">
           Hi, I&apos;m

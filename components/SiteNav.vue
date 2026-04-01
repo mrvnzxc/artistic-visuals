@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed inset-x-0 top-0 z-30 border-b border-slate-200/80 bg-white/95 shadow-sm shadow-black/[0.04] dark:border-white/[0.06] dark:bg-neutral-950 dark:shadow-none"
+    class="fixed inset-x-0 top-0 z-30 border-b border-slate-200/80 bg-white/95 shadow-sm shadow-black/[0.04] dark:border-white/[0.04] dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 dark:shadow-none"
   >
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
       <div class="flex items-center gap-3">
@@ -90,7 +90,7 @@
       </div>
     </nav>
 
-    <div v-if="open" class="border-t border-slate-200 bg-white/95 dark:border-white/[0.06] dark:bg-neutral-950 lg:hidden">
+    <div v-if="open" class="border-t border-slate-200 bg-white/95 dark:border-white/[0.04] dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 lg:hidden">
       <div class="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 text-sm">
         <NuxtLink
           v-for="item in navItems"
