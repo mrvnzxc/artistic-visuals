@@ -5,12 +5,8 @@
         Services
       </p>
       <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
-        Photography packages you can customize later.
+        Photography for weddings, milestones, and events.
       </h1>
-      <p class="mt-3 text-sm text-slate-600 dark:text-slate-300">
-        These are placeholder packages for weddings, portraits, and branding. Change titles, pricing,
-        and details to match what Artistic Visuals actually offers.
-      </p>
     </header>
 
     <section class="mt-10 space-y-6">
@@ -33,9 +29,6 @@
             <p class="text-slate-900 dark:text-zinc-50">
               {{ service.priceHint }}
             </p>
-            <p class="text-xs text-slate-500 dark:text-slate-400">
-              Swap this with your real pricing.
-            </p>
           </div>
         </div>
 
@@ -53,15 +46,12 @@
           </li>
         </ul>
 
-        <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs">
-          <p class="text-slate-500 dark:text-slate-400">
-            {{ service.note }}
-          </p>
+        <div class="mt-4 flex flex-wrap justify-end">
           <NuxtLink
             to="/contact"
-            class="rounded-full border border-zinc-400/80 px-4 py-2 font-semibold uppercase tracking-[0.25em] text-slate-800 hover:border-zinc-500 hover:bg-zinc-100/90 dark:border-zinc-600/50 dark:text-zinc-200 dark:hover:border-zinc-500 dark:hover:bg-zinc-900/60"
+            class="rounded-full border border-zinc-400/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-slate-800 hover:border-zinc-500 hover:bg-zinc-100/90 dark:border-zinc-600/50 dark:text-zinc-200 dark:hover:border-zinc-500 dark:hover:bg-zinc-900/60"
           >
-            Ask about this package
+            Inquire about this
           </NuxtLink>
         </div>
       </article>
@@ -72,46 +62,43 @@
 <script setup lang="ts">
 const services = [
   {
-    title: 'The Wedding Story',
-    tagline: 'Full‑day coverage • Documentary style',
-    priceHint: 'Example: from $1,800',
+    title: 'Wedding & pre-wedding',
+    tagline: 'Ceremony to reception • Engagement sessions',
+    priceHint: 'Rates on request',
     description:
-      'Designed for full wedding days, from getting ready through the dance floor. Replace this text with how you actually work and what moments you focus on most.',
+      'Coverage for your wedding day and pre-wedding or engagement photography—story-led images from preparation through celebrations, with attention to candid moments and the details that matter to you.',
     included: [
-      'Example: 8–10 hours coverage',
-      'Example: 2 photographers',
-      'Example: Online gallery & highlight slideshow',
-      'Example: Timeline planning support'
-    ],
-    note: 'Edit hours, number of shooters, and delivery details to match your real offer.'
+      'Wedding day photography',
+      'Pre-wedding / engagement shoots',
+      'Coordination-friendly timeline awareness',
+      'Edited images delivered in an online gallery'
+    ]
   },
   {
-    title: 'Portrait & Lifestyle',
-    tagline: 'Couples • Families • Individuals',
-    priceHint: 'Example: from $250',
+    title: 'Milestones & portraits',
+    tagline: 'Debuts • Birthdays • Graduation • Portraits',
+    priceHint: 'Rates on request',
     description:
-      'For portraits that feel natural, relaxed, and true to you. Use this section to describe your approach to posing, locations, and how you help people feel comfortable.',
+      'Sessions for personal milestones and celebrations—debut and pre-debut, birthday shoots, graduation portraits, and relaxed portrait sessions for individuals, couples, or small groups.',
     included: [
-      'Example: 60–90 minute session',
-      'Example: 1–2 locations within your area',
-      'Example: Online gallery with curated favorites',
-      'Example: Outfit guidance & prep tips'
-    ],
-    note: 'You can add different portrait tiers here (mini sessions, extended sessions, etc.).'
+      'Debut and pre-debut photography',
+      'Birthday and graduation portrait sessions',
+      'Couples, family, and solo portraits',
+      'Location and styling guidance as needed'
+    ]
   },
   {
-    title: 'Brand & Content',
-    tagline: 'Small businesses • Artists • Creators',
-    priceHint: 'Example: custom quote',
+    title: 'Events',
+    tagline: 'Ceremonies • Gatherings • Programs',
+    priceHint: 'Rates on request',
     description:
-      'Tell future clients how you help them show up online with consistent, on‑brand imagery. Mention studio options, product photos, or on‑location storytelling.',
+      'Photography for events and programs where timing and coverage matter—school or organization events, graduation ceremonies, parties, and other gatherings you want documented clearly and thoughtfully.',
     included: [
-      'Example: Strategy call to plan your shoot',
-      'Example: Mix of portraits, behind‑the‑scenes, and details',
-      'Example: Commercial usage license options',
-      'Example: Delivery optimized for web & social'
-    ],
-    note: 'If you specialize in a certain niche (salons, restaurants, artists), highlight that here.'
+      'Event and ceremony coverage',
+      'Candids, key moments, and group photos as discussed',
+      'Flexible coverage windows based on your run-of-show',
+      'Delivery via online gallery'
+    ]
   }
 ]
 </script>

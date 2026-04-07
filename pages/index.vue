@@ -235,22 +235,22 @@ const itemLabels = {
 
 const services = [
   {
-    title: 'Wedding Day Story',
+    title: 'Wedding & pre-wedding',
     description:
-      'Full‑day coverage with a focus on candid, documentary‑style storytelling. Replace with your real package details.',
-    note: 'Best for full weddings & big events.'
+      'Wedding day and pre-wedding or engagement photography—story-led coverage from preparation through your celebration.',
+    note: 'Rates on request.'
   },
   {
-    title: 'Portrait Session',
+    title: 'Milestones & portraits',
     description:
-      'Couples, families, graduates, or personal branding portraits. You can list session length, locations, and outfit changes.',
-    note: 'Perfect for memories & milestones.'
+      'Debut and pre-debut, birthdays, graduation portraits, and relaxed sessions for couples, families, or individuals.',
+    note: 'Rates on request.'
   },
   {
-    title: 'Brand & Content',
+    title: 'Events',
     description:
-      'Visuals for small businesses, artists, and creators. Update this section with your brand work or studio offerings.',
-    note: 'Ideal for creatives & entrepreneurs.'
+      'Ceremonies, programs, graduation events, parties, and other gatherings you want documented clearly.',
+    note: 'Rates on request.'
   }
 ]
 

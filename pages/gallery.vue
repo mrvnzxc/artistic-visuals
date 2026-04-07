@@ -19,8 +19,8 @@
           tabindex="0"
           :aria-label="`Open ${item.category}`"
           :class="[
-            'group relative cursor-zoom-in rounded-xl border border-slate-300/90 bg-gradient-to-br from-zinc-200 via-zinc-100/80 to-slate-400 p-2 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-zinc-400/70 hover:shadow-md hover:shadow-black/10 dark:border-zinc-700/50 dark:from-zinc-900 dark:via-zinc-800/80 dark:to-neutral-950 dark:hover:border-zinc-500/50',
-            item.orientation === 'landscape' ? 'col-span-2 aspect-[16/10]' : 'aspect-[3/4]'
+            'group relative cursor-zoom-in overflow-hidden rounded-2xl border border-slate-300/90 bg-slate-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-zinc-400/70 hover:shadow-md hover:shadow-black/10 dark:border-zinc-700/50 dark:bg-slate-900/40 dark:hover:border-zinc-500/50 dark:hover:shadow-black/30',
+            item.orientation === 'landscape' ? 'col-span-2 aspect-[4/3]' : 'aspect-[3/4]'
           ]"
           @click="openImage(index)"
           @keydown.enter.prevent="openImage(index)"
@@ -29,9 +29,9 @@
           <img
             v-if="item.src"
             :src="item.src"
-            alt=""
+            :alt="item.category"
             loading="lazy"
-            class="h-full w-full rounded-lg object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+            class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
           <div
@@ -39,14 +39,11 @@
             class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(161,161,170,0.35),_transparent_55%)] opacity-75 group-hover:opacity-100 dark:bg-[radial-gradient(circle_at_top,_rgba(113,113,122,0.25),_transparent_55%)]"
           />
 
-          <div class="pointer-events-none absolute left-2 top-2 rounded-md bg-white/70 px-2 py-1.5 backdrop-blur-[1px] dark:bg-black/45">
-            <span class="text-[10px] font-medium uppercase tracking-[0.25em] text-slate-900 dark:text-slate-100">{{ item.category }}</span>
-          </div>
-          <div class="pointer-events-none absolute bottom-2 left-2 rounded-md bg-white/70 px-2 py-1.5 backdrop-blur-[1px] dark:bg-black/45">
-            <span class="text-[9px] font-medium uppercase tracking-[0.2em] text-slate-700 dark:text-slate-200">{{ item.note }}</span>
-          </div>
-          <div class="pointer-events-none absolute bottom-2 right-2 rounded-md bg-white/70 px-2 py-1.5 backdrop-blur-[1px] dark:bg-black/45">
-            <span class="text-[9px] font-semibold uppercase tracking-[0.2em] text-slate-700 dark:text-slate-200">{{ toLabel(index + 1) }}</span>
+          <div class="absolute inset-0 bg-black/15" />
+
+          <div class="relative flex h-full items-end justify-between gap-3 p-4 text-xs text-white dark:text-slate-100">
+            <span>{{ item.category }}</span>
+            <span v-if="item.note" class="max-w-[55%] text-right text-[10px] leading-snug text-white/90">{{ item.note }}</span>
           </div>
         </div>
       </div>
@@ -115,8 +112,6 @@ const galleryItems = [
 ] satisfies GalleryItem[]
 
 const activeIndex = ref<number | null>(null)
-
-const toLabel = (value: number) => value.toString().padStart(2, '0')
 
 const openImage = (index: number) => {
   activeIndex.value = index
