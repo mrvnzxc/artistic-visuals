@@ -7,11 +7,6 @@
       <h1 class="mt-2 text-3xl font-semibold tracking-tight sm:text-4xl">
         Let&apos;s plan your next session.
       </h1>
-      <p class="mt-3 text-sm text-slate-600 dark:text-zinc-400">
-        This form is just a front‑end mockup. Connect it to your preferred email service or form
-        backend later. For now, it shows all the fields you might want to collect from potential
-        clients.
-      </p>
     </header>
 
     <section data-reveal class="mt-8 rounded-2xl border border-slate-300/90 bg-white/90 p-5 text-slate-800 shadow-sm shadow-black/5 ring-1 ring-zinc-900/[0.06] transition-all duration-300 ease-out hover:border-zinc-400/80 hover:shadow-md hover:shadow-black/10 dark:border-zinc-700/50 dark:bg-zinc-950/40 dark:text-zinc-100 dark:ring-zinc-500/10 dark:hover:border-zinc-500/40 sm:p-6">
@@ -120,13 +115,8 @@
           type="button"
           class="w-full rounded-full border border-zinc-800/40 bg-gradient-to-r from-zinc-800 via-neutral-800 to-black px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/25 transition hover:brightness-110 hover:shadow-lg dark:border-zinc-600/50 dark:from-zinc-700 dark:via-zinc-800 dark:to-black dark:shadow-black/40"
         >
-          This button is a mockup (wire it later)
+          Send inquiry
         </button>
-
-        <p class="text-xs text-slate-600 dark:text-zinc-500">
-          Tip: later, connect this form to email (via a simple API route, Formspree, Getform, or your
-          own backend) so inquiries arrive directly in your inbox.
-        </p>
       </form>
     </section>
   </div>

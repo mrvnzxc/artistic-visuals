@@ -78,7 +78,6 @@
               <div class="absolute inset-0 bg-black/15" />
               <div class="relative flex h-full items-end justify-between p-4 text-xs text-white dark:text-slate-100">
                 <span>Portrait</span>
-                <span class="text-[10px] uppercase tracking-[0.25em]">Gallery</span>
               </div>
             </div>
             <div
@@ -101,7 +100,6 @@
               <div class="absolute inset-0 bg-black/15" />
               <div class="relative flex h-full items-end justify-between p-4 text-xs text-white dark:text-slate-100">
                 <span>Details</span>
-                <span class="text-[10px] uppercase tracking-[0.25em]">Gallery</span>
               </div>
             </div>
           </div>
@@ -126,7 +124,6 @@
               <div class="absolute inset-0 bg-black/15" />
               <div class="relative flex h-full items-end justify-between p-4 text-xs text-white dark:text-slate-100">
                 <span>Weddings</span>
-                <span class="text-[10px] uppercase tracking-[0.25em]">Gallery</span>
               </div>
             </div>
             <div
@@ -148,8 +145,7 @@
               />
               <div class="absolute inset-0 bg-black/15" />
               <div class="relative flex h-full items-end justify-between p-4 text-xs text-white dark:text-slate-100">
-                <span>Editorial</span>
-                <span class="text-[10px] uppercase tracking-[0.25em]">Gallery</span>
+                <span>Portrait</span>
               </div>
             </div>
           </div>
