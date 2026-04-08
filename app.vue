@@ -34,8 +34,8 @@ useHead(() => ({
   link: [
     {
       rel: 'icon',
-      type: 'image/jpeg',
-      href: theme.value === 'dark' ? '/images/logo/avdark.jpg' : '/images/logo/avlight.jpg'
+      type: 'image/webp',
+      href: theme.value === 'dark' ? '/images/logo/avdark.webp' : '/images/logo/avlight.webp'
     }
   ]
 }))

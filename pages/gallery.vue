@@ -55,14 +55,14 @@
       @click.self="closeImage"
     >
       <button
-        class="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/35 bg-black/50 px-3 py-2 text-2xl text-white transition hover:bg-black/75"
+        class="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-white/35 bg-black/50 px-3 py-2 text-2xl text-white transition hover:bg-black/75"
         type="button"
         aria-label="Previous image"
         @click="showPrev"
       >
         &lt;
       </button>
-      <div class="relative w-full max-w-4xl rounded-2xl border border-zinc-300/20 bg-black/30 p-2">
+      <div class="relative z-10 w-full max-w-4xl rounded-2xl border border-zinc-300/20 bg-black/30 p-2">
         <button
           class="absolute right-3 top-3 rounded-full border border-white/25 bg-black/50 px-3 py-1 text-sm text-white transition hover:bg-black/75"
           type="button"
@@ -79,7 +79,7 @@
         />
       </div>
       <button
-        class="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/35 bg-black/50 px-3 py-2 text-2xl text-white transition hover:bg-black/75"
+        class="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-white/35 bg-black/50 px-3 py-2 text-2xl text-white transition hover:bg-black/75"
         type="button"
         aria-label="Next image"
         @click="showNext"
@@ -101,14 +101,14 @@ type GalleryItem = {
 }
 
 const galleryItems = [
-  { category: 'Portrait', note: 'Outdoor', orientation: 'portrait', src: '/images/gallery/portraits.jpg' },
-  { category: 'Couple', note: 'Candid laughter', orientation: 'portrait', src: '/images/gallery/couple.jpg' },
-  { category: 'Family', note: 'At-home storytelling', orientation: 'portrait', src: '/images/gallery/family.jpg' },
-  { category: 'Editorial', note: 'Moody studio', orientation: 'portrait', src: '/images/gallery/editorial.jpg' },
-  { category: 'Wedding', note: 'First dance', orientation: 'landscape', src: '/images/gallery/wedding.jpg' },
-  { category: 'Details', note: 'Rings & florals', orientation: 'landscape', src: '/images/gallery/details.jpg' },
-  { category: 'Ceremony', note: 'Walking the aisle', orientation: 'landscape', src: '/images/gallery/ceremony.jpg' },
-  { category: 'Brand', note: 'Workspace story', orientation: 'landscape', src: '/images/gallery/brand.jpg' }
+  { category: 'Portrait', note: 'Outdoor', orientation: 'portrait', src: '/images/gallery/portraits.webp' },
+  { category: 'Couple', note: 'Candid laughter', orientation: 'portrait', src: '/images/gallery/couple.webp' },
+  { category: 'Family', note: 'At-home storytelling', orientation: 'portrait', src: '/images/gallery/family.webp' },
+  { category: 'Editorial', note: 'Moody studio', orientation: 'portrait', src: '/images/gallery/editorial.webp' },
+  { category: 'Wedding', note: 'First dance', orientation: 'landscape', src: '/images/gallery/wedding.webp' },
+  { category: 'Details', note: 'Rings & florals', orientation: 'landscape', src: '/images/gallery/details.webp' },
+  { category: 'Ceremony', note: 'Walking the aisle', orientation: 'landscape', src: '/images/gallery/ceremony.webp' },
+  { category: 'Brand', note: 'Workspace story', orientation: 'landscape', src: '/images/gallery/brand.webp' }
 ] satisfies GalleryItem[]
 
 const activeIndex = ref<number | null>(null)

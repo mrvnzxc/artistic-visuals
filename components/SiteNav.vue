@@ -6,13 +6,13 @@
       <div class="flex items-center gap-3">
         <NuxtLink to="/" class="flex items-center gap-3">
           <img
-            src="/images/logo/avlight.jpg"
+            src="/images/logo/avlight.webp"
             alt="Artistic Visuals"
             class="h-11 w-auto dark:hidden sm:h-12"
             loading="eager"
           />
           <img
-            src="/images/logo/avdark.jpg"
+            src="/images/logo/avdark.webp"
             alt="Artistic Visuals"
             class="hidden h-11 w-auto dark:block sm:h-12"
             loading="eager"

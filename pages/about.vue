@@ -42,13 +42,13 @@
         class="flex items-center justify-center rounded-xl border border-slate-300/90 bg-white p-4 transition-all duration-300 ease-out hover:border-zinc-400/70 dark:border-zinc-700/50 dark:bg-black/30 dark:hover:border-zinc-500/50 lg:p-6"
       >
         <img
-          src="/images/logo/avlight.jpg"
+          src="/images/logo/avlight.webp"
           alt="Artistic Visuals logo"
           class="max-h-52 w-auto dark:hidden lg:max-h-64"
           loading="lazy"
         />
         <img
-          src="/images/logo/avdark.jpg"
+          src="/images/logo/avdark.webp"
           alt="Artistic Visuals logo"
           class="hidden max-h-52 w-auto dark:block lg:max-h-64"
           loading="lazy"
